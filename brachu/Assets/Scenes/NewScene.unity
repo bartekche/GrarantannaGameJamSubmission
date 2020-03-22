@@ -389,7 +389,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_JumpForce: 600
   m_CrouchSpeed: 0.36
-  m_MovementSmoothing: 0.05
+  m_MovementSmoothing: 0.043
   m_AirControl: 1
   m_WhatIsGround:
     serializedVersion: 2
@@ -428,7 +428,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 738693400}
   animator: {fileID: 738693395}
-  runSpeed: 30
+  runSpeed: 20
 --- !u!70 &738693402
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

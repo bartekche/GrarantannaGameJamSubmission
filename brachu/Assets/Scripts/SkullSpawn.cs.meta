@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 45c0c47b80f116e4dbc1624f6eeea3a2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - skull_prefab: {fileID: 9013411997973617385, guid: b371cddd768350a479528648c20663c4,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

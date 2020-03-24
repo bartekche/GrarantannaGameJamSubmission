@@ -12,10 +12,10 @@ public class SkullMovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         Vector3 p = transform.position;
-        p.x -= velocity;
+        p.x -= velocity*Time.fixedDeltaTime;
         transform.position = p;
 
     }

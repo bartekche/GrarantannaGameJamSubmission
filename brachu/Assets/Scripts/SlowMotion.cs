@@ -13,7 +13,7 @@ public class SlowMotion : MonoBehaviour
     private void Update()
     {
         rb = player.GetComponent<Rigidbody2D>();
-        if ( (Mathf.Abs(rb.velocity.x) > 0.01f ) || (Mathf.Abs(rb.velocity.y) > 0.01f) )
+        if ( (Mathf.Abs(rb.velocity.x) > 0.01f ) || (Mathf.Abs(rb.velocity.y) > 0.01f) || PlayerMovement.jumping)
         {
             if(slow)
             {

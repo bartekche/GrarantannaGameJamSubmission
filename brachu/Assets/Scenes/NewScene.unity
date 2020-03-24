@@ -534,7 +534,7 @@ GameObject:
   - component: {fileID: 613905077}
   m_Layer: 0
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -645,6 +645,7 @@ GameObject:
   - component: {fileID: 738693398}
   - component: {fileID: 738693401}
   - component: {fileID: 738693402}
+  - component: {fileID: 738693403}
   m_Layer: 8
   m_Name: Character
   m_TagString: Player
@@ -845,6 +846,18 @@ CapsuleCollider2D:
   m_Offset: {x: -0.0018839439, y: -0.17621827}
   m_Size: {x: 0.15675208, y: 0.28756365}
   m_Direction: 0
+--- !u!114 &738693403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 738693394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5053628f1a992a7478468edd939d8e9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &824741774
 GameObject:
   m_ObjectHideFlags: 0

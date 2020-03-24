@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     bool jump = false;
     bool crouch = false;
     public static bool jumping = false;
+    public static bool crouching = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,17 +30,20 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             jump = true;
-            animator.SetBool("jump", true);
             jumping = true;
+            animator.SetBool("jump", true);
         }
         if(Input.GetButtonDown("Crouch"))
         {
             crouch = true;
+            crouching = true;
             animator.SetBool("crouch", true);
+
         }
         else if (Input.GetButtonUp("Crouch"))
         {
             crouch = false;
+            crouching = false;
             animator.SetBool("crouch", false);
         }
         

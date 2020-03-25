@@ -58,6 +58,7 @@ public class PlayerMovement : MonoBehaviour
     }
     public void onLanding()
     {
+        print("bbb");
         animator.SetBool("jump", false);
         playaudio = true;
     }

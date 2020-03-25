@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+[RequireComponent(typeof(AudioSource))]
 public class PlayerMovement : MonoBehaviour
 {
     public CharacterController2D controller;
@@ -14,10 +14,12 @@ public class PlayerMovement : MonoBehaviour
     bool crouch = false;
     public static bool jumping = false;
     public static bool crouching = false;
+    AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
-        
+        audioSource = GetComponent<AudioSource>();
+        audioSource.pitch = 1.0f;
     }
 
     // Update is called once per frame
@@ -29,6 +31,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetButtonDown("Jump"))
         {
+            audioSource.Play();
             jump = true;
             jumping = true;
             animator.SetBool("jump", true);

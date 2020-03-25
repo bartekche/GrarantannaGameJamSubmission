@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     float horizontalMove = 0f;
     bool jump = false;
     bool crouch = false;
+    bool playaudio = true;
     public static bool jumping = false;
     public static bool crouching = false;
     AudioSource audioSource;
@@ -31,7 +32,11 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetButtonDown("Jump"))
         {
-            audioSource.Play();
+            if(playaudio)
+            {
+                audioSource.Play();
+            }
+            playaudio = false;
             jump = true;
             jumping = true;
             animator.SetBool("jump", true);
@@ -54,6 +59,7 @@ public class PlayerMovement : MonoBehaviour
     public void onLanding()
     {
         animator.SetBool("jump", false);
+        playaudio = true;
     }
     void FixedUpdate()
     {

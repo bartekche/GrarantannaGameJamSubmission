@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class DestroyonCollwithPlayer : MonoBehaviour
 {
     void OnCollisionEnter2D(Collision2D col)
@@ -11,6 +11,7 @@ public class DestroyonCollwithPlayer : MonoBehaviour
         if(col.gameObject.tag != "ground" && col.gameObject.layer != 9 )
         {
             Destroy(col.gameObject);
+            SceneManager.LoadScene("DeathScene");
         }
         
         

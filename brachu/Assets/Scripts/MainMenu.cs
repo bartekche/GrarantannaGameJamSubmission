@@ -17,6 +17,10 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
+    public void GoTutorial()
+    {
+        SceneManager.LoadScene("Tutorial");
+    }
     public void GoToMore()
     {
         SceneManager.LoadScene("More");

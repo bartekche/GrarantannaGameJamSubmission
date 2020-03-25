@@ -6,7 +6,7 @@ public class SlowMotion : MonoBehaviour
 {
     private float slowmo = 0.1f;
     private float normaltime = 1.0f;
-    private bool slow = false;
+    public static bool slow = false;
 
     public GameObject player;
     private Rigidbody2D rb;
